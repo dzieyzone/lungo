@@ -32,7 +32,11 @@ aside .list li.active {
 aside .list li strong {
   color: #FFF;
 }
-
+section > footer > nav > a.active {
+  -webkit-box-shadow: inset 0 3px 0 #8284BD;
+  -moz-box-shadow: inset 0 3px 0 #8284BD;
+  box-shadow: inset 0 3px 0 #8284BD;
+}
 section > nav.groupbar > a.active {
   -webkit-box-shadow: inset 0 -3px 0 #8284BD;
   -moz-box-shadow: inset 0 -3px 0 #8284BD;
