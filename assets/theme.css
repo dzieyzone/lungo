@@ -19,3 +19,26 @@ section > article > .basic-page > h2 {
 section > article > .basic-page > p {
 	margin:5px 0;
 }
+
+/** PRODUCTS PAGE **/
+
+#products footer nav .icon {
+  height: 32px;
+  margin-top: 8px;
+}
+
+#products footer nav .first .icon {
+  background:transparent url("../assets/images/chex-logo-grey.png");
+}
+
+#products footer nav .first.active .icon {
+  background:transparent url("../assets/images/chex-logo-white.png");
+}
+
+#products footer nav .second .icon {
+  background:transparent url("../assets/images/frankenman-logo-grey.png");
+}
+
+#products footer nav .second.active .icon {
+  background:transparent url("../assets/images/frankenman-logo-white.png");
+}

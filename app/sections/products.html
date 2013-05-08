@@ -1,17 +1,21 @@
 <section id="products">
-  <header>
+  <header class="extended">
     <nav class="left"> <a href="#back" data-router="section" data-icon="home"></a> </nav>
     <h1 class="title centered">Products</h1>
   </header>
+  <nav class="groupbar"> 
+    <a href="#products-list" data-router="article" data-label="Chex Products" class="active"></a> 
+    <a href="#" data-router="article" data-label="Frankenman Products"></a> 
+  </nav>
   <footer>
     <nav> 
-      <a href="#about-us" data-router="section" data-icon=""><img src="assets/images/chex-logo-white.png"></a> 
-      <a href="#" data-router="section" data-icon=""><img src="assets/images/frankenman-logo-white.png"></a> 
+      <a href="#products-list" data-router="section" data-icon="" class="first active"></a> 
+      <a href="#" data-router="section" data-icon="" class="second"></a> 
     </nav>
   </footer>
   <article id="products-list" class="active list scroll">
     <ul>
-      <li class="arrow"> <a href="#video" data-router="section"><strong>Chex Healthcare Products</strong></a> </li>
+      <li class="arrow"> <strong>CPH34 HV High Volume Stapled Hemorrhoidopexy</strong> </li>
       <li class="arrow"> <strong>Product 22</strong> </li>
       <li class="arrow"> <strong>Product 32</strong> </li>
       <li class="arrow"> <strong>Product 42</strong> </li>
