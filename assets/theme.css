@@ -1,3 +1,7 @@
+section > article {
+  color:#9D9D9D;	
+}
+
 section > article.basic-page {
   padding:20px;	
 }
@@ -5,3 +9,14 @@ section > article.basic-page {
 section > article.basic-page > .img-responsive {
   width:100%;	
 }
+
+section > article.basic-page > h2 {
+  margin:10px 0 5px 0;
+  font-size:140%;
+  font-weight:600;	
+}
+
+section > article.basic-page > p {
+	margin:5px 0;
+}
+
