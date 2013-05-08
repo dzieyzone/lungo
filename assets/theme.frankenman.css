@@ -24,7 +24,7 @@ a.theme {
 .theme:active,
 li.theme:active,
 a.theme:active {
-  background-color: #ee6557;
+  background-color: #8284BD;
 }
 [data-control="pull"] {
   color: #666;
@@ -34,10 +34,10 @@ a.theme:active {
 }
 /* -------------------------- LAYOUT COLORS -------------------------- */
 section > header {
-  background-color: #ee6557;
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #f17c70, inset 0 -1px 0 #ea3c2b;
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #f17c70, inset 0 -1px 0 #ea3c2b;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #f17c70, inset 0 -1px 0 #ea3c2b;
+  background-color: #8284BD;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #8B8DBF, inset 0 -1px 0 #6D70BA;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #8B8DBF, inset 0 -1px 0 #6D70BA;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 1px 0 #8B8DBF, inset 0 -1px 0 #6D70BA;
   color: #fff;
 }
 section > footer,
@@ -49,11 +49,11 @@ section nav.groupbar {
 }
 section > article,
 section > [data-control="pull"] {
-  background-color: #f4f5f5;
+  background-color: #FFF;
 }
 section > article.splash,
 section > [data-control="pull"].splash {
-  background: #ee6557;
+  background: #8284BD;
   color: #fff;
 }
 section.aside {
@@ -83,23 +83,30 @@ aside > header {
 section > header > nav a {
   color: #fff;
 }
+section > header > nav a:not(.button) {
+  color: #61638E;
+  text-shadow: 0 1px 0 #959595;
+}
+section > header > nav a:not(.button):active {
+  color: #4e4e4e;
+}
 section > header > nav:not(.right) a {
-  -webkit-box-shadow: 1px 0 0 #f17c70, inset -1px 0 0 #ea3c2b;
-  -moz-box-shadow: 1px 0 0 #f17c70, inset -1px 0 0 #ea3c2b;
-  box-shadow: 1px 0 0 #f17c70, inset -1px 0 0 #ea3c2b;
+  -webkit-box-shadow: 1px 0 0 #8B8DBF, inset -1px 0 0 #6D70BA;
+  -moz-box-shadow: 1px 0 0 #8B8DBF, inset -1px 0 0 #6D70BA;
+  box-shadow: 1px 0 0 #8B8DBF, inset -1px 0 0 #6D70BA;
 }
 section > header > nav.right a {
-  -webkit-box-shadow: -1px 0 0 #f17c70, inset 1px 0 0 #ea3c2b;
-  -moz-box-shadow: -1px 0 0 #f17c70, inset 1px 0 0 #ea3c2b;
-  box-shadow: -1px 0 0 #f17c70, inset 1px 0 0 #ea3c2b;
+  -webkit-box-shadow: -1px 0 0 #8B8DBF, inset 1px 0 0 #6D70BA;
+  -moz-box-shadow: -1px 0 0 #8B8DBF, inset 1px 0 0 #6D70BA;
+  box-shadow: -1px 0 0 #8B8DBF, inset 1px 0 0 #6D70BA;
 }
 section > header > nav a:active {
-  background: #ea3c2b;
+  background: #6D70BA;
 }
 section > nav.groupbar > a.active {
-  -webkit-box-shadow: inset 0 -3px 0 #ee6557;
-  -moz-box-shadow: inset 0 -3px 0 #ee6557;
-  box-shadow: inset 0 -3px 0 #ee6557;
+  -webkit-box-shadow: inset 0 -3px 0 #8284BD;
+  -moz-box-shadow: inset 0 -3px 0 #8284BD;
+  box-shadow: inset 0 -3px 0 #8284BD;
 }
 section > footer > nav > a,
 nav.groupbar > a {
@@ -117,9 +124,9 @@ section > footer > nav > a {
 section > footer > nav > a.active {
   color: #fff;
   background-color: #1d1d1d;
-  -webkit-box-shadow: inset 0 3px 0 #ee6557;
-  -moz-box-shadow: inset 0 3px 0 #ee6557;
-  box-shadow: inset 0 3px 0 #ee6557;
+  -webkit-box-shadow: inset 0 3px 0 #8284BD;
+  -moz-box-shadow: inset 0 3px 0 #8284BD;
+  box-shadow: inset 0 3px 0 #8284BD;
 }
 aside nav a.active .icon {
   color: #fff;
@@ -158,9 +165,9 @@ section .list li.accept {
   box-shadow: inset 4px 0px 0px #3fb58e;
 }
 section .list li.cancel {
-  -webkit-box-shadow: inset 4px 0px 0px #ee6557;
-  -moz-box-shadow: inset 4px 0px 0px #ee6557;
-  box-shadow: inset 4px 0px 0px #ee6557;
+  -webkit-box-shadow: inset 4px 0px 0px #8284BD;
+  -moz-box-shadow: inset 4px 0px 0px #8284BD;
+  box-shadow: inset 4px 0px 0px #8284BD;
 }
 section .list li,
 section .list li a {
@@ -180,7 +187,7 @@ section .list li.theme,
 section .list li a.theme,
 section .list li.active,
 section .list li a.active {
-  background: #f17c70;
+  background: #8B8DBF;
 }
 section .list li.light,
 section .list li a.light {
@@ -234,7 +241,7 @@ aside .list li:not(:last-child) {
   border-bottom: solid 1px #141414;
 }
 aside .list li.active {
-  background: #ee6557;
+  background: #8284BD;
   border-color: transparent;
 }
 aside .list li.active strong,
@@ -258,7 +265,7 @@ aside .list li .icon {
   font-weight: 700 !important;
 }
 .tag:not(.icon).count {
-  background-color: #ee6557;
+  background-color: #8284BD;
 }
 .tag:not(.icon) header .count {
   background-color: THEME-dark !important;
@@ -288,7 +295,7 @@ footer .tag:not(.icon) {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  color: #ea3c2b !important;
+  color: #6D70BA !important;
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
@@ -336,7 +343,7 @@ button[disabled] {
 button,
 .button,
 .tag:not(.icon) {
-  background-color: #ea3c2b;
+  background-color: #6D70BA;
 }
 button.secondary,
 .button.secondary,
@@ -351,7 +358,7 @@ button.accept,
 button.cancel,
 .button.cancel,
 .tag:not(.icon).cancel {
-  background-color: #ee6557;
+  background-color: #8284BD;
 }
 /* -------------------------- BUTTONS -------------------------- */
 form label,
@@ -479,7 +486,7 @@ form select:focus,
 form textarea:focus,
 .form textarea:focus {
   background: #fafafa;
-  border-color: #ee6557;
+  border-color: #8284BD;
   color: rgba(0,0,0,0.75);
 }
 form input[type="text"][disabled],
@@ -529,7 +536,7 @@ form input[type=range]:not(.checkbox),
 }
 form input[type=range]:not(.checkbox):active,
 .form input[type=range]:not(.checkbox):active {
-  background-color: #f17c70;
+  background-color: #8B8DBF;
 }
 form input[type=range].checkbox,
 .form input[type=range].checkbox {
@@ -539,7 +546,7 @@ form input[type=range].checkbox,
 form input[type=range].checkbox.active,
 .form input[type=range].checkbox.active {
   color: #fff;
-  background-color: #f17c70;
+  background-color: #8B8DBF;
 }
 form input[type=range]::-webkit-slider-thumb,
 .form input[type=range]::-webkit-slider-thumb {
@@ -560,5 +567,5 @@ form .progress .bar,
 }
 form .progress .bar .value,
 .form .progress .bar .value {
-  background-color: #f17c70;
+  background-color: #8B8DBF;
 }
