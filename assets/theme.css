@@ -2,20 +2,20 @@ section > article {
   color:#626262;	
 }
 
-section > article.basic-page {
+section > article > .basic-page {
   padding:15px;	
 }
 
-section > article.basic-page > .img-responsive {
+section > article > .basic-page > .img-responsive {
   width:100%;	
 }
 
-section > article.basic-page > h2 {
+section > article > .basic-page > h2 {
   margin:10px 0 5px 0;
   font-size:140%;
   font-weight:600;	
 }
 
-section > article.basic-page > p {
+section > article > .basic-page > p {
 	margin:5px 0;
 }
