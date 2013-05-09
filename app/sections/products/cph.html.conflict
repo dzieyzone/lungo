@@ -1,4 +1,30 @@
-<section id="product1" data-transition="slide">
+<<<<<<< HEAD
+<section id="product" data-transition="slide">
+  <header class="extended">
+    <nav>
+      <a href="#back" data-router="section" class="button secondary" data-icon="home"></a>
+    </nav>
+    <h1 class="title centered">Chex Products</h1>
+  </header>
+  <nav class="groupbar"> 
+    <a href="#product-overview" data-router="article" data-label="Overview" class="active"></a> 
+    <a href="#product-desc" data-router="article" data-label="Description"></a> 
+  </nav>
+  <footer>
+    <nav> 
+      <a href="#product-overview" data-router="article" data-icon="picture"></a> 
+      <a href="#product-desc" data-router="article" data-icon="book"></a>  
+    </nav>
+  </footer>
+  <article id="product-overview" class="scroll basic-page active">
+    <p>Lorenm</p>
+  </article>
+  <article id="product-desc" class="scroll basic-page">
+    <p>Ipsum</p>
+    <a href="#back" data-router="section" class="button secondary anchor" data-icon="home"><span class="icon home"></span>Return</a>
+  </article>
+=======
+<section id="product1">
   <header class="extended">
     <nav class="left"> <a href="#back" data-router="section" data-icon="left"></a> </nav>
     <h1 class="title centered">Chex Products</h1>
@@ -47,4 +73,5 @@
        <a href="http://www.frankenman.hk/wp-content/uploads/CPH34HV.pdf" class="button anchor margin top">Download PDF</a>
     </div>
   </article>
+>>>>>>> 3b40dd4660e10f2be3676b8e2180fe99640cd089
 </section>

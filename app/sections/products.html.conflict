@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 <section id="products" data-transition="slide">
+  <header class="extended" data-back="home">
+=======
+<section id="products">
   <header class="extended">
     <nav class="left"> <a href="index.html" data-icon="home"></a> </nav>
+>>>>>>> 3b40dd4660e10f2be3676b8e2180fe99640cd089
     <h1 class="title centered">Products</h1>
   </header>
   <nav class="groupbar"> 
@@ -9,7 +14,7 @@
   </nav>
   <footer>
     <nav> 
-      <a href="#products-chex" data-router="article" data-icon="" class="first active"></a> 
+      <a href="#products-chex" data-router="article" data-icon="" class="first"></a> 
       <a href="#products-frankenman" data-router="article" data-icon="" class="second"></a> 
     </nav>
   </footer>
