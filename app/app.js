@@ -16,11 +16,11 @@
   //  $$('aside article li').removeClass('active');
   //  $$(this).addClass('active');
   //});
-  
-  Lungo.dom('.home-aside').tap(function(event) {
-    Lungo.View.Aside.toggle("#navigation");
-  });
-
+  //
+  //Lungo.dom('.home-aside').tap(function(event) {
+  //  Lungo.View.Aside.toggle("#navigation");
+  //});
+  */
 var renderThis = function(struct, data){
-  console.log(struct, data);  
+  //console.log(struct, data);  
 };
