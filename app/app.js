@@ -20,7 +20,7 @@
   //Lungo.dom('.home-aside').tap(function(event) {
   //  Lungo.View.Aside.toggle("#navigation");
   //});
-  */
+
 var renderThis = function(struct, data){
   //console.log(struct, data);  
 };
