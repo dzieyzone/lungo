@@ -13,11 +13,12 @@
   }
   else {
   	$to = "joel.magundayao@insitesocial.com";
-  	$subject = "Frankenman Inquiry";
-  	$message = "<b>Name:</b> ".$_GET['name']."";
+  	$subject = "Frankenman Inquiry | Mobile Contact Page";
+  	$message = "<b>Name:</b> ".$_GET['name']."<br />";
+  	$message .= "<b>Mail:</b> ".$_GET['mail']."<br />";
   	$message .= "<b>Message:</b><br/> ".$_GET['message']."";
   	$header = "From:".$_GET['mail']." \r\n";
-  	$header = "Cc:joel@iwoork.com \r\n";
+  	$header = "Cc:matthewsexton@insitesocial.com \r\n";
   	$header .= "MIME-Version: 1.0\r\n";
   	$header .= "Content-type: text/html\r\n";
   	$retval = mail($to,$subject,$message,$header);
