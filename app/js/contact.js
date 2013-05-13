@@ -5,7 +5,7 @@ Lungo.dom(".submit").tap(function(event) {
   
   $$.ajax({
 	    type: 'POST', // defaults to 'GET'
-	    url: "http://localhost/lungo/app/sections/contact.php?name="+name+"&mail="+mail+"&message="+message,
+	    url: "http://m.frankenman.hk/app/sections/contact.php?name="+name+"&mail="+mail+"&message="+message,
 	    data: {name : ""},
 	    dataType: 'html', //'json', 'xml', 'html', or 'text'
 	    async: true,
