@@ -5,23 +5,28 @@
   <article id="products-list" class="active scroll">
     <div class="basic-page">
     <h2>Contact Us</h2>
-     <div class="form">
-       <fieldset>
-         <label>Name:</label>
-         <input type="text">
-       </fieldset>
-       <fieldset>
-         <label>Email:</label>
-         <input type="text">
-       </fieldset>
-       <fieldset>
-         <label>Message:</label>
-         <textarea></textarea>
-       </fieldset>
-       <fieldset>
-         <input type="submit" value="Submit" class="dark">
-       </fieldset>
-     </div>
+      <form method="post" name="contact_form">
+       <div class="form">
+         <fieldset>
+           <label>Name:</label>
+           <input type="text" name="name">
+         </fieldset>
+         <fieldset>
+           <label>Email:</label>
+           <input type="text" name="mail">
+         </fieldset>
+         <fieldset>
+           <label>Message:</label>
+           <textarea name="message"></textarea>
+         </fieldset>
+         <fieldset>
+           <input type="submit" value="Submit" class="submit">
+         </fieldset>
+       </div>
+      </form>   
     </div>  
   </article>
 </section>
+<script>
+  alert(0);
+</script>
