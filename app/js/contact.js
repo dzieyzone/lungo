@@ -11,9 +11,11 @@ Lungo.dom(".submit").tap(function(event) {
 	    async: true,
 	    success: function(response) { 
 	      $$(".messages").html(response);  
-	      $$(".name").val("");
-	      $$(".mail").val("");
-	      $$(".message").val("");
+	      if(response == "Message has been submitted."){
+	        $$(".name").val("");
+	        $$(".mail").val("");
+	        $$(".message").val("");
+	      }
 	    },
 	    error: function(xhr, type) { alert(0); }
 	});
