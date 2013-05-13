@@ -50,4 +50,9 @@ section > article > .basic-page > p {
   font-size: 90%;
   background: #444;
   color: #fff;
-}  
+}
+
+.messages {
+  padding:10px;
+  font-style:italic;  
+}
