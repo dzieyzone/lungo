@@ -42,3 +42,17 @@ section > article > .basic-page > p {
 #products footer nav .second.active .icon {
   background:transparent url("../assets/images/frankenman-logo-white.png");
 }
+
+.submit{
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 90%;
+  background: #444;
+  color: #fff;
+}
+
+.messages {
+  padding:10px;
+  font-style:italic;  
+}
