@@ -1,4 +1,4 @@
-	$$.ajax({
+  $$.ajax({
     type: 'POST', // defaults to 'GET'
     url: 'data/data.json',
     dataType: 'json', //'json', 'xml', 'html', or 'text'

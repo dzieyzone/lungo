@@ -6,20 +6,24 @@ Lungo.dom('.player').tap(function(event) {
   player.playVideo();
 });
 
-//Lungo.dom('#video').on('load', function(event){
-  
-//});
+    //Lungo.dom('#video').on('load', function(event){
+      
+    //});
 
 Lungo.dom('#video').on('unload', function(event){
   player.stopVideo();
 });
 
-$$.ready(function() {
+Lungo.ready(function() {
+
   var tag = document.createElement('script');
 
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+});
 
   var player;
   function onYouTubeIframeAPIReady() {
@@ -30,4 +34,3 @@ $$.ready(function() {
       html5: 1,
     });
   }
-});
