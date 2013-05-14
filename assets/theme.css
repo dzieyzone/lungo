@@ -61,3 +61,7 @@ section > article > .basic-page > p {
 ul.nav {
   padding: 20px 0;
 }
+
+.list li.arrow {
+  padding-right: 20px;
+}
