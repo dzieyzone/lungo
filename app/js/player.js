@@ -2,7 +2,9 @@ Lungo.dom('.player').tap(function(event) {
   var yid = $$(this).data('yid');
   var htitle = Lungo.dom(this).html();
   Lungo.dom('#video header h1').html(htitle);
-  player.loadVideoById(yid);
+  var vUrl = 'http://www.youtube.com/v/' + yid + '?version=3';
+  player.loadVideoByUrl(vUrl);
+  //player.loadVideoById(yid);
   player.playVideo();
 });
 
