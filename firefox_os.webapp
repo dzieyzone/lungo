@@ -1,0 +1,13 @@
+{
+  "name": "Frankenman",
+  "description": "Frankenman Mobile",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "http://m.frankenman.com/assets/images/logo-hires.png"
+  },
+  "developer": {
+    "name": "InSiteSocial",
+    "url": "http://insitesocial.com.hk"
+  },
+  "default_locale": "en"
+}
