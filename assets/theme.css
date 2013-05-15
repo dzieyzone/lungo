@@ -2,7 +2,7 @@ section > article {
   color:#626262;	
 }
 
-section > article > .basic-page {
+section article .basic-page {
   padding:15px;	
 }
 
@@ -19,6 +19,10 @@ section > article > .basic-page > h2 {
 
 section > article > .basic-page > p {
 	margin:5px 0;
+}
+
+.strong {
+  font-weight:bold;	
 }
 
 /** PRODUCTS PAGE **/
