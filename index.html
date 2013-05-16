@@ -5,7 +5,7 @@
 <title>Frankenman International Limited</title>
 <meta name="description" content="">
 <meta name="HandheldFriendly" content="True">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
@@ -73,7 +73,7 @@
       <li class="arrow"><a href="#" data-target="support"><strong>Support</strong></a></li>
       <li class="arrow"><a href="#" data-target="contact"><strong>Contact Us</strong></a></li>
     </ul>
-    <a data-target="aside" class="button">Toggle aside</a>
+    <a data-target="aside" class="button" data-icon="menu"></a>
   </article>
 </section>
 <section id="video" data-transition="slide">
@@ -100,6 +100,7 @@
   </article>
 </aside>
 <!-- Lungo - Dependencies --> 
+<script src="https://www.youtube.com/iframe_api"></script>
 <script src="components/quojs/quo.js"></script> 
 <script src="components/lungo/lungo.js"></script> 
 <!-- Lungo - Sandbox App --> 
@@ -107,6 +108,7 @@
   Lungo.init({
     name: 'Frankenman',
     version : '2.1',
+    history: false,
     resources: [
       //'app/aside.html',
       'app/sections/products.html',
@@ -115,12 +117,16 @@
       'app/sections/contact.html']
   });
   
-  Lungo.dom('.nav a').tap(function(){
+  $$('.nav a').tap(function(){
     var aSection = $$(this).data('target');
     Lungo.Router.section(aSection);
   });
-  Lungo.dom('[data-target=aside]').tap(function(){
-    Lungo.Router.aside("home", "navigation");
+  $$('[data-target=aside]').tap(function(){
+    //Lungo.Router.aside('home', 'navigation');
+    $$('#navigation').addClass('show');
+    $$('#home').addClass('aside');
+    Lungo.Notification.show('Title', 'message', 0);
+    //Lungo.View.Aside.toggle("#navigation");
   });
   //Lungo.dom('.view-article').tap(function(){
     //var aArticle = $$(this).data('target');
@@ -128,8 +134,19 @@
     //$$('.view-article').removeClass('active');
     //$$(this).addClass('active');
   //});
+  Lungo.ready(function(){
+    window.addEventListener("load", function () {
+      // Set a timeout...
+      setTimeout(function () {
+        // Hide the address bar!
+        window.scrollTo(0, 1);
+      }, 0);
+    });
+  });
 </script>
-<script src="app/app.js"></script>
+<!--
+  <script src="app/app.js"></script> 
+<!-- end -->
 <script src="app/js/player.js"></script>
 <script src="app/js/contact.js"></script>
 </body>
